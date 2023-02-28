@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/welander/developer/ucl/nuxt/node_modules/nuxt/dist/app/entry.mjs": {
+  "/Users/madsandersen/developer/nuxt/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/Users/welander/developer/ucl/nuxt/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "/Users/madsandersen/developer/nuxt/node_modules/nuxt/dist/app/entry.mjs"
   }
 }

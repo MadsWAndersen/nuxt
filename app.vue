@@ -1,53 +1,47 @@
 <script setup>
+import { toDisplayString } from 'vue';
 
-  const routes = [
-    {
-      "path": "/",
-      "component": "pages/index.vue"
-    },
-    {
-      "path": "/about",
-      "component": "pages/about/index.vue"
-    },
-    {
-      "path": "/contact/",
-      "component": "pages/contact.vue"
-    },
-    {
-      "path": "/about/history",
-      "component": "pages/about/history.vue"
-    },
-    {
-      "path": "/blog",
-      "component": "pages/index.vue"
-    },
-    {
-      "path": "/blog/[id]artical.vue",
-      "component": "pages/[id].vue"
-    }
-  ]
+
+const routes = [
+  {
+    "path": "/",
+    "component": "pages/index.vue"
+  },
+  {
+    "path": "/about",
+    "component": "pages/about/index.vue"
+  },
+  {
+    "path": "/contact/",
+    "component": "pages/contact.vue"
+  },
+  {
+    "path": "/about/history",
+    "component": "pages/about/history.vue"
+  },
+  {
+    "path": "/blog",
+    "component": "pages/index.vue"
+  },
+  {
+    "path": "/blog/[id]artical.vue",
+    "component": "pages/[id].vue"
+  }
+]
 
 
 </script>
 <template>
-  <div>
-    <nav>
-      <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-        <li><NuxtLink to="/blog/id">id</NuxtLink></li>
-        <li><NuxtLink to="/blog/test">test</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-        <li><NuxtLink to="/about/history">History</NuxtLink></li>
-      </ul>
-    </nav>
-      <NuxtPage />
-
-  </div>
+  <NuxtLayout>
+    some page content
+  </NuxtLayout>
 </template>
 
 
-<style lang="scss" scoped>
-
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 </style>

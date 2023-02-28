@@ -1,25 +1,25 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/welander/developer/ucl/nuxt/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/madsandersen/developer/nuxt/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///Users/welander/developer/ucl/nuxt/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/vue/server-renderer/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/welander/developer/ucl/nuxt/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/hookable/dist/index.mjs';
-import { snakeCase } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/scule/dist/index.mjs';
-import { hash } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/welander/developer/ucl/nuxt/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file:///Users/welander/developer/ucl/nuxt/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/welander/developer/ucl/nuxt/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///Users/madsandersen/developer/nuxt/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///Users/madsandersen/developer/nuxt/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///Users/madsandersen/developer/nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///Users/madsandersen/developer/nuxt/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///Users/madsandersen/developer/nuxt/node_modules/vue/server-renderer/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///Users/madsandersen/developer/nuxt/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/madsandersen/developer/nuxt/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/madsandersen/developer/nuxt/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/madsandersen/developer/nuxt/node_modules/hookable/dist/index.mjs';
+import { snakeCase } from 'file:///Users/madsandersen/developer/nuxt/node_modules/scule/dist/index.mjs';
+import { hash } from 'file:///Users/madsandersen/developer/nuxt/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery } from 'file:///Users/madsandersen/developer/nuxt/node_modules/ufo/dist/index.mjs';
+import { createStorage } from 'file:///Users/madsandersen/developer/nuxt/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/madsandersen/developer/nuxt/node_modules/unstorage/drivers/fs.mjs';
+import defu from 'file:///Users/madsandersen/developer/nuxt/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/madsandersen/developer/nuxt/node_modules/radix3/dist/index.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
 const ENV_PREFIX = "NITRO_";
@@ -61,7 +61,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"/Users/welander/developer/ucl/nuxt/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/madsandersen/developer/nuxt/server/assets"}];
 
 const assets = createStorage();
 
@@ -75,10 +75,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/welander/developer/ucl/nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/welander/developer/ucl/nuxt/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/welander/developer/ucl/nuxt/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/welander/developer/ucl/nuxt/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/madsandersen/developer/nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/madsandersen/developer/nuxt/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/madsandersen/developer/nuxt/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/madsandersen/developer/nuxt/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -484,11 +484,11 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_mglG5y = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_brt1jB = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_mglG5y, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_mglG5y, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_brt1jB, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_brt1jB, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -628,9 +628,9 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/Users/welander/developer/ucl/nuxt/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/Users/madsandersen/developer/nuxt/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/Users/welander/developer/ucl/nuxt/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/madsandersen/developer/nuxt/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
