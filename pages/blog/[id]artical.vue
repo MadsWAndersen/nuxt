@@ -7,10 +7,12 @@ console.log(id);
 
 <template>
     <div>
-        this is the {{ id.idartical }} subpage
+        this is the <span>{{ id.idartical }}</span> subpage
     </div>
 </template>
 
 <style lang="scss" scoped>
-
+span {
+    font-weight: bold;
+}
 </style>
