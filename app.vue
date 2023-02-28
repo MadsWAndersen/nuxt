@@ -33,7 +33,7 @@ const routes = [
 </script>
 <template>
   <NuxtLayout>
-    some page content
+
   </NuxtLayout>
 </template>
 

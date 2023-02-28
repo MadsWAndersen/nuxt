@@ -1,9 +1,7 @@
-<script>
-export default {
-    head: {
-        title: 'New Title'
-    }
-}
+<script setup>
+
+   
+
 </script>
 <template>
     <div>
@@ -11,4 +9,8 @@ export default {
     </div>
 </template>
 
-<style></style>
+
+
+<script setup>
+
+</script>
